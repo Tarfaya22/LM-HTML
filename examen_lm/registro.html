@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio 2</title>
+	<meta charset="utf_8">
+</head>
+<body background="./images/wallpaper.webp">
+<h1>Formulario de registro: Biblioteca ATENEA</h1>
+<form name="formulario" method="post" action="./recibido.html">
+<fieldset>
+<legend>Datos personales</legend>
+<table>
+	<tr>
+		<td><label>Nombre Completo(*):</label>
+		<td><input type="text" name="nombre" id="nombre" required></td>
+		<td><label>Telefono(*):</td>
+		<td><input type="tel" name="telefono" id="telefono" pattern="[1-9]{9}"required placeholder="123456789"></td>
+	</tr>
+	<tr>
+		<td><label>Correo electrónico(*):</label>
+		<td><input type="email" name="correo" id="correo" required></td>
+		<td><label for="edad">Mayor de edad:</td>
+		<td><input type="radio" name="edad" id="mayor" checked>Si</input><input type="radio" name="edad" id="menor">No</input></td>
+	</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>Preferencias:</legend>
+<table>
+	<tr>
+		<td><label>Géneros favoritos:</label></td>
+		<td><select name="genero" id="genero">
+			<option value="Ficcion">Ficción</option>
+			<option value="Ciencia">Ciencia</option>
+			<option value="Arte">Arte</option>
+			<option value="Historia">Historia</option>
+			</select></td>
+		<td><label>Otros datos de interés:</label></td>
+		<td><textarea name="otros" id="otros"></textarea></td>
+	</tr>
+</table>
+</fieldset>
+<fieldset>
+<table>
+	<tr>
+		<td><input type="checkbox" name="novedades" id="novedades" checked><label>Deseo recibir newsteller con novedades</label></td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="Registrarse"><input type="reset" value="Borrar todo"></td>
+	</tr>
+</table>
+</fieldset>
+<h2>Todos los campos marcados con (*) son obligatorios</h2>
+<p>Tu carnet de socio será válido en nuestros dentros centros de:</p>
+<ul type="radio">
+	<li>Madrid</li>
+	<li>Barcelona</li>
+	<li>Valencia</li>
+	<li>Sevilla</li>
+	<li>Bilbao</li>
+</ul>
+<a href="./index.html">VOLVER</a>
+</body>
+</html>
